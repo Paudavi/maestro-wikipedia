@@ -1,26 +1,26 @@
-# Maestro – Tests E2E de la app de Wikipedia
+# Maestro – Wikipedia App E2E Tests
 
-> 🚧 **Proyecto en proceso.** La estructura y los flujos todavía están cambiando.
+> 🚧 **Work in progress.** The structure and flows are still changing.
 
-Proyecto de práctica de automatización de tests mobile end-to-end con [Maestro](https://maestro.mobile.dev/), usando como app bajo prueba Wikipedia para Android (`org.wikipedia`).
+A practice project for end-to-end mobile test automation with [Maestro](https://maestro.mobile.dev/), using the Wikipedia Android app (`org.wikipedia`) as the app under test.
 
-## Estructura
+## Structure
 
 ```
-flows/       Flujos de test agrupados por funcionalidad (basic, search, auth…)
-subflows/    Pasos reutilizables (p. ej. saltear el onboarding)
-scripts/     Scripts JS para generar datos de prueba
-samples/     Flujos de ejemplo oficiales de Maestro, como referencia
-config.yaml  Configuración del workspace
+flows/       Test flows grouped by feature (basic, search, auth…)
+subflows/    Reusable steps (e.g. skipping onboarding)
+scripts/     JS scripts for generating test data
+samples/     Official Maestro sample flows, kept for reference
+config.yaml  Workspace configuration
 ```
 
-## Cómo correrlo
+## Running
 
-1. Instalar [Maestro](https://maestro.mobile.dev/getting-started/installing-maestro).
-2. Tener un emulador o dispositivo Android con la app de Wikipedia instalada (el APK no está en el repo).
-3. Ejecutar:
+1. Install [Maestro](https://maestro.mobile.dev/getting-started/installing-maestro).
+2. Have an Android emulator or device with the Wikipedia app installed (the APK is not included in the repo).
+3. Run:
 
 ```bash
-maestro test .                     # todos los flujos
-maestro test --include-tags smoke . # solo los smoke tests
+maestro test .                      # all flows
+maestro test --include-tags smoke . # smoke tests only
 ```
