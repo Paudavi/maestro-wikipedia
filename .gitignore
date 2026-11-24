@@ -1,0 +1,24 @@
+# macOS
+.DS_Store
+
+# Binarios de las apps bajo prueba (pesados; GitHub rechaza archivos > 100 MB)
+*.apk
+*.ipa
+*.app
+*.zip
+
+# Volcados de jerarquía de UI y salidas de debug
+pantalla.json
+*.hierarchy.json
+
+# Reportes y artefactos de ejecución de Maestro
+report*.xml
+report*.html
+.maestro/tests/
+screenshots/
+recordings/
+*.mp4
+
+# Editor
+.vscode/
+.idea/

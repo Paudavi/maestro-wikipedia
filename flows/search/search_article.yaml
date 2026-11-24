@@ -1,0 +1,10 @@
+appId: org.wikipedia
+tags:
+  - smoke
+---
+- launchApp:
+    clearState: true
+- runFlow: ../../subflows/skip_onboarding.yaml
+- tapOn: "Search Wikipedia"
+- inputText: "Uruguay"
+- assertVisible: "Uruguay"
